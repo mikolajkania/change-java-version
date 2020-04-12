@@ -5,8 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>change-java-version</artifactId>
+    <artifactId>java-versions</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <developers>
+        <developer>
+            <name>Mikołaj Kania</name>
+            <organizationUrl>http://itblues.pl/</organizationUrl>
+        </developer>
+    </developers>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -33,7 +40,7 @@
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-compiler-plugin</artifactId>
                         <configuration>
-                            <release>11</release>
+                            <release>13</release>
                             <compilerArgs>
                                 <arg>--enable-preview</arg>
                             </compilerArgs>
@@ -52,7 +59,7 @@
                 <version>3.8.1</version>
                 <configuration>
                     <!-- Make sure we're not using Java 9+ APIs -->
-                    <release>8</release>
+                    <release>10</release>
                     <annotationProcessorPaths>
                         <annotationProcessorPath>
                             <groupId>com.github.bsideup.jabel</groupId>
